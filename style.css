@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-size: 100px;
+  font-weight: bold;
+  animation: moveBg 10s cubic-bezier(0.68, 0.34, 0.31, 0.69) infinite;
+}
+@keyframes moveBg {
+  50% {
+    background-position: center;
+  }
+}
+.forest {
+  background: url("images/forest.webp");
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: top;
+}
+.desert {
+  background: url("images/desert.webp");
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: top;
+}
+.sea {
+  background: url("images/sea.avif");
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: bottom;
+}
